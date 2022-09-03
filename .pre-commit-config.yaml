@@ -3,12 +3,6 @@
 # See https://www.youtube.com/watch?v=psjz6rwzMdk for how-to on pre-commits
 
 repos:
-    # Find any outdated syntax and replace with modern equivalents
-    - repo: https://github.com/asottile/pyupgrade
-      rev: v2.29.0
-      hooks:
-          - id: pyupgrade
-            args: ["--py37-plus"]
 
     # Reorder imports into standard order
     - repo: https://github.com/asottile/reorder_python_imports
