@@ -1,0 +1,46 @@
+name: Test py-tictoc
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  unit_tests:
+    runs-on: "${{ matrix.os }}"
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+        python-version:
+          - 3.5
+          - 3.6
+          - 3.7
+          - 3.8
+          - 3.9
+          - 3.10
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install Packages
+        run: |
+          pip install --requirements requirements.txt
+          pip install --requirements requirements-dev.txt
+      - name: Run PyTest
+        run: |
+          pytest --verbose --cov=py_tictoc --cov-report=term --cov-report=html:cov-report/html --cov-report=xml:cov-report/xml/cov-report.xml
+      - name: Upload Coverage
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./cov-report/xml/cov-report.xml
+      - name: Run MyPy
+        run: |
+          mypy py_tictoc --ignore-missing-imports --pretty --install-types --non-interactive
