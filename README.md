@@ -14,6 +14,7 @@ Time the execution of Python code using syntax similar to MATLAB's tic and toc f
     - [Run PyTests:](#run-pytests)
     - [Run MyPy Tests:](#run-mypy-tests)
 
+
 ## Installation
 
 ### Using [`pip`](https://pypi.org/project/pip):
