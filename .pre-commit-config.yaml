@@ -1,0 +1,43 @@
+# See https://pre-commit.com for more info
+# See https://pre-commit.com/hooks.html for more hooks
+# See https://www.youtube.com/watch?v=psjz6rwzMdk for how-to on pre-commits
+
+repos:
+    # Find any outdated syntax and replace with modern equivalents
+    - repo: https://github.com/asottile/pyupgrade
+      rev: v2.29.0
+      hooks:
+          - id: pyupgrade
+            args: ["--py37-plus"]
+
+    # Reorder imports into standard order
+    - repo: https://github.com/asottile/reorder_python_imports
+      rev: v2.6.0
+      hooks:
+          - id: reorder-python-imports
+            args: ["--application-directories=.:src", "--py37-plus"]
+
+    # Fixes
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v3.2.0
+      hooks:
+          - id: trailing-whitespace
+          - id: end-of-file-fixer
+          - id: check-yaml
+          - id: debug-statements
+            language_version: python3
+
+    # Run MyPy type checks
+    - repo: https://github.com/pre-commit/mirrors-mypy
+      rev: v0.910
+      hooks:
+          - id: mypy
+            files: src
+            args: ["--ignore-missing-imports", "--pretty", "--install-types", "--non-interactive"]
+
+    # Linter
+    - repo: https://github.com/psf/black
+      rev: 22.6.0
+      hooks:
+          - id: black
+            args: ["--safe"]

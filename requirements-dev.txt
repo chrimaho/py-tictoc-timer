@@ -1,0 +1,13 @@
+black
+pre-commit
+reorder-python-imports
+mypy
+pytest
+pytest-clarity
+pytest-cov
+pytest-sugar
+pytest-icdiff
+pytest-xdist
+ipykernel
+pyupgrade
+poetry
