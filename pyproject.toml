@@ -6,17 +6,17 @@ authors = ["Chris Mahoney <https://github.com/chrimaho>"]
 
 [tool.poetry.dependencies]
 python = ">=3.6,<4"
-typeguard = "*"
+typeguard = "~2.13"
 
 [tool.poetry.dev-dependencies]
-black = "*"
-mypy = "*"
-pytest = "*"
-pytest-clarity = "*"
-pytest-cov = "*"
-pytest-sugar = "*"
-pytest-icdiff = "*"
-pytest-xdist = "*"
+black = "~22.8"
+mypy = "~0.971"
+pytest = "~7.1"
+pytest-clarity = "~1.0"
+pytest-cov = "~3.0"
+pytest-sugar = "~0.9"
+pytest-icdiff = "~2.0"
+pytest-xdist = "~2.5"
 
 [tool.pytest.ini_options]
 # https://docs.pytest.org/en/6.2.x/customize.html#pyproject-toml
