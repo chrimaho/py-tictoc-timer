@@ -1,6 +1,8 @@
 # py-tictoc
 Time the execution of Python code using syntax similar to MATLAB's tic and toc functions.
 
+[![codecov](https://codecov.io/gh/chrimaho/py-tictoc/branch/main/graph/badge.svg)](https://codecov.io/gh/chrimaho/py-tictoc)
+
 - [py-tictoc](#py-tictoc)
   - [Installation](#installation)
     - [Using `pip`:](#using-pip)
