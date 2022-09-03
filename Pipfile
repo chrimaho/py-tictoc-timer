@@ -18,8 +18,6 @@ pytest-sugar = "*"
 pytest-icdiff = "*"
 pytest-xdist = "*"
 ipykernel = "*"
-pyupgrade = "*"
-poetry = "*"
 
 [requires]
 python_version = "3.10"
