@@ -33,7 +33,7 @@ jobs:
         export PATH=$PATH:$HOME/.poetry/bin
     - name: Install Dependencies
       run: |
-        poetry install --no-interaction --no-root
+        poetry install --no-interaction --without dev
     - name: Build Package
       run: |
         poetry build
