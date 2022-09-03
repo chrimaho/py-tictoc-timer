@@ -66,7 +66,8 @@ class TestTicToc(TestCase):
         sleep(1.1)
         val = tt.toc_value()
         sys.stdout.write(f"{val}")
-        self.assertAlmostEqual(val, 1.1, 1)
+        self.assertGreaterEqual(val, 1)
+        self.assertLessEqual(val, 1.5)
 
     def test_tictoc_extended(self):
         with TicToc():
