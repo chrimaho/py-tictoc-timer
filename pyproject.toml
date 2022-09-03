@@ -18,22 +18,6 @@ pytest-sugar = "*"
 pytest-icdiff = "*"
 pytest-xdist = "*"
 
-exclude = '''
-/(
-    \.git
-    | \.hg
-    | \.mypy_cache
-    | \.tox
-    | \.venv
-    | _build
-    | buck-out
-    | build
-    | dist
-    | env
-    | venv
-)/
-'''
-
 [tool.pytest.ini_options]
 # https://docs.pytest.org/en/6.2.x/customize.html#pyproject-toml
 # Directories that are not visited by pytest collector:
