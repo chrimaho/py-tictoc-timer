@@ -1,18 +1,20 @@
 from __future__ import annotations
+
 from timeit import default_timer
 from typing import Optional
+
 from typeguard import typechecked
 
 
 __all__ = ["TicToc"]
 __author__ = "Chris Mahoney"
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 
 class TicToc:
     """
     Summary:
-        TicToc Timer to be used similar to MATLAB's tic() and toc() functions.
+        TicToc Timer to be used similar to MATLAB's `tic` and `toc` functions.
 
     Attributes:
         start (float):
