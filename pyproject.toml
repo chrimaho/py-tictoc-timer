@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "py-tictoc"
-version = "0.1.5"
+version = "0.1.6"
 description = "Time the execution of Python code using syntax similar to MATLAB's tic and toc functions."
 authors = ["Chris Mahoney <https://github.com/chrimaho>"]
 
@@ -17,22 +17,6 @@ pytest-cov = "*"
 pytest-sugar = "*"
 pytest-icdiff = "*"
 pytest-xdist = "*"
-
-exclude = '''
-/(
-    \.git
-    | \.hg
-    | \.mypy_cache
-    | \.tox
-    | \.venv
-    | _build
-    | buck-out
-    | build
-    | dist
-    | env
-    | venv
-)/
-'''
 
 [tool.pytest.ini_options]
 # https://docs.pytest.org/en/6.2.x/customize.html#pyproject-toml
