@@ -1,1 +1,1 @@
-python -m pipenv run python -m black --safe tictoc_timer tests
+python -m pipenv run python -m black --safe py_tictoc_timer tests

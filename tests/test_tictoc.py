@@ -4,7 +4,7 @@ from unittest import TestCase
 
 import pytest
 
-from tictoc_timer.tictoc import TicToc
+from py_tictoc_timer.tictoc import TicToc
 
 
 class TestTicToc(TestCase):

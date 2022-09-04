@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "tictoc-timer"
+name = "py-tictoc-timer"
 version = "0.1.12"
 description = "Time the execution of Python code using syntax similar to MATLAB's tic and toc functions."
 readme = "README.md"
 authors = ["Chris Mahoney <chrismahoney@hotmail.com>"]
 license = "MIT"
-repository = "https://github.com/chrimaho/py-tictoc"
+repository = "https://github.com/chrimaho/py-tictoc-timer.git"
 
 [tool.poetry.dependencies]
 python = ">=3.7,<4"
