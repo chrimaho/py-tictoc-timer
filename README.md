@@ -4,15 +4,16 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/py-tictoc-timer?label=version)](https://img.shields.io/pypi/v/py-tictoc-timer?label=version)
 [![Python](https://img.shields.io/pypi/pyversions/py-tictoc-timer.svg?style=plastic&logo=python)](https://badge.fury.io/py/py-tictoc-timer)
+
+[![Released](https://img.shields.io/github/release-date/chrimaho/py-tictoc-timer)](https://img.shields.io/github/release-date/chrimaho/py-tictoc-timer)
 [![Unit Testing](https://img.shields.io/github/workflow/status/chrimaho/py-tictoc-timer/Unit%20Testing/main?label=testing&logo=pytest)](https://github.com/chrimaho/py-tictoc-timer/actions/workflows/unit-tests.yml)
 [![Publish Package](https://img.shields.io/github/workflow/status/chrimaho/py-tictoc-timer/Publish%20Package?label=build&logo=pypi)](https://github.com/chrimaho/py-tictoc-timer/actions/workflows/pypi-publish.yml)
 [![codecov](https://codecov.io/gh/chrimaho/py-tictoc-timer/branch/main/graph/badge.svg)](https://codecov.io/gh/chrimaho/py-tictoc-timer)
-[![Released](https://img.shields.io/github/release-date/chrimaho/py-tictoc-timer)](https://img.shields.io/github/release-date/chrimaho/py-tictoc-timer)
+
 [![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/chrimaho/py-tictoc-timer)](https://img.shields.io/snyk/vulnerabilities/github/chrimaho/py-tictoc-timer)
 [![License](https://img.shields.io/pypi/l/py-tictoc-timer)](https://img.shields.io/pypi/l/py-tictoc-timer)
 <!-- [![Downloads](https://img.shields.io/pypi/dm/py-tictoc-timer)](https://github.com/chrimaho/py-tictoc-timer) -->
 <!-- [![Stability](https://img.shields.io/pypi/status/py-tictoc-timer)](https://img.shields.io/pypi/status/py-tictoc-timer) -->
-
 
 </div>
 
@@ -176,7 +177,7 @@ Time the execution of Python code using syntax similar to MATLAB's tic and toc f
         python -m poetry run pre-commit install
         ```
 4. Start contributing.
-5. Ensure you add a [Unit Test](https://docs.python.org/3/library/unittest.html) to the [test library](https://github.com/chrimaho/py-tictoc-timer/blob/main/tests/test_tictoc.py) for each new feature/functionality.
+5. Ensure you add additional [Unit Test](https://docs.python.org/3/library/unittest.html)s to the [test library](https://github.com/chrimaho/py-tictoc-timer/blob/main/tests/test_tictoc.py) for each new feature/functionality.
 6. Ensure that all the [tests](#tests) are passing successfully.
 7. When you're happy with the changes, raise a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) to merge with the [main](https://github.com/chrimaho/py-tictoc-timer/tree/main) branch again.
 
