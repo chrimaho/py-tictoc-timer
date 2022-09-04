@@ -1,9 +1,10 @@
+import sys
 from time import sleep
 from unittest import TestCase
-import sys
+
 import pytest
 
-from py_tictoc.tictoc import TicToc
+from tictoc_timer.tictoc import TicToc
 
 
 class TestTicToc(TestCase):

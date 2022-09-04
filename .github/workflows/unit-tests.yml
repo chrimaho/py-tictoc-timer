@@ -1,4 +1,4 @@
-name: Test py-tictoc
+name: Unit Testing
 
 on:
   push:

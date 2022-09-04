@@ -1,9 +1,11 @@
-# py-tictoc
+# tictoc-timer
 Time the execution of Python code using syntax similar to MATLAB's tic and toc functions.
 
-[![codecov](https://codecov.io/gh/chrimaho/py-tictoc/branch/main/graph/badge.svg)](https://codecov.io/gh/chrimaho/py-tictoc)
+[![codecov](https://codecov.io/gh/chrimaho/tictoc-timer/branch/main/graph/badge.svg)](https://codecov.io/gh/chrimaho/tictoc-timer)
+[![Unit Testing](https://github.com/chrimaho/tictoc-timer/actions/workflows/unit-tests.yml/badge.svg?branch=main)](https://github.com/chrimaho/tictoc-timer/actions/workflows/unit-tests.yml)
+[![Publish Package](https://github.com/chrimaho/tictoc-timer/actions/workflows/pypi-publish.yml/badge.svg?branch=main)](https://github.com/chrimaho/tictoc-timer/actions/workflows/pypi-publish.yml)
 
-- [py-tictoc](#py-tictoc)
+- [tictoc-timer](#tictoc-timer)
   - [Installation](#installation)
     - [Using `pip`:](#using-pip)
     - [Using `pipenv`:](#using-pipenv)
@@ -20,19 +22,19 @@ Time the execution of Python code using syntax similar to MATLAB's tic and toc f
 
 ### Using [`pip`](https://pypi.org/project/pip):
 ```sh
-pip install py-tictoc
+pip install tictoc-timer
 ```
 
 ### Using [`pipenv`](https://github.com/pypa/pipenv):
 ```sh
-pipenv install py-tictoc
+pipenv install tictoc-timer
 ```
 
 ### Using [`poetry`](https://python-poetry.org):
 1. In your `pyproject.toml` file, add:
     ```toml
     [tool.poetry.dependencies]
-    py-tictoc
+    tictoc-timer
     ```
 2. Then in the terminal, run:
     ```sh
@@ -41,7 +43,7 @@ pipenv install py-tictoc
 
 ### Using [`conda`](https://docs.conda.io)
 ```sh
-conda install py-tictoc
+conda install tictoc-timer
 ```
 
 ## Usage
@@ -143,16 +145,15 @@ All contributions are welcome!
 
 ### Run [Black](https://black.readthedocs.io/)
 ```sh
-python -m pipenv run python -m black --safe py_tictoc tests
+python -m pipenv run python -m black --safe tictoc_timer tests
 ```
 
 ### Run [PyTests](https://docs.pytest.org):
 ```sh
-python -m pipenv run python -m pytest --verbose --cov=py_tictoc --cov-report=term --cov-report=html:cov-report/html --cov-report=xml:cov-report/xml/cov-report.xml
+python -m pipenv run python -m pytest --verbose --cov=tictoc_timer --cov-report=term --cov-report=html:cov-report/html --cov-report=xml:cov-report/xml/cov-report.xml
 ```
 
 ### Run [MyPy](http://www.mypy-lang.org) Tests:
 ```sh
-pipenv run mypy py_tictoc --ignore-missing-imports --pretty --install-types --non-interactive
+pipenv run mypy tictoc_timer --ignore-missing-imports --pretty --install-types --non-interactive
 ```
-
