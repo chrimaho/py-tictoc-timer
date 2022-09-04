@@ -11,8 +11,16 @@ repository = "https://github.com/chrimaho/py-tictoc"
 python = ">=3.7,<4"
 typeguard = "~2.13"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
 black = "~22.8"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
 mypy = "~0.971"
 pytest = "~7.1"
 pytest-clarity = "~1.0"
