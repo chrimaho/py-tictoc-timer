@@ -33,10 +33,10 @@ jobs:
         export PATH=$PATH:$HOME/.poetry/bin
     - name: Install Dependencies
       run: |
-        poetry install --no-interaction --without dev
+        poetry install --no-interaction --only main
     - name: Build Package
       run: |
         poetry build
     - name: Publish Package
       run: |
-        poetry publish --repository pypi --username __token__ --password ${{ secrets.PYPI_API_TOKEN }}
+        poetry publish --username __token__ --password ${{ secrets.PYPI_API_TOKEN }}
