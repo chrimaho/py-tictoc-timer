@@ -2,6 +2,8 @@
 Time the execution of Python code using syntax similar to MATLAB's tic and toc functions.
 
 [![codecov](https://codecov.io/gh/chrimaho/tictoc-timer/branch/main/graph/badge.svg)](https://codecov.io/gh/chrimaho/tictoc-timer)
+[![Unit Testing](https://github.com/chrimaho/tictoc-timer/actions/workflows/unit-tests.yml/badge.svg?branch=main)](https://github.com/chrimaho/tictoc-timer/actions/workflows/unit-tests.yml)
+[![Publish Package](https://github.com/chrimaho/tictoc-timer/actions/workflows/pypi-publish.yml/badge.svg?branch=main)](https://github.com/chrimaho/tictoc-timer/actions/workflows/pypi-publish.yml)
 
 - [tictoc-timer](#tictoc-timer)
   - [Installation](#installation)
