@@ -47,3 +47,6 @@ jobs:
       - name: Run MyPy
         run: |
           mypy py_tictoc_timer --ignore-missing-imports --pretty --install-types --non-interactive
+      - name: Run Black
+        run: |
+          black --safe py_tictoc_timer tests
