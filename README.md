@@ -1,11 +1,12 @@
-# tictoc-timer
+# py-tictoc-timer
+
+[![codecov](https://codecov.io/gh/chrimaho/py-tictoc-timer/branch/main/graph/badge.svg)](https://codecov.io/gh/chrimaho/py-tictoc-timer)
+[![Unit Testing](https://github.com/chrimaho/py-tictoc-timer/actions/workflows/unit-tests.yml/badge.svg?branch=main)](https://github.com/chrimaho/py-tictoc-timer/actions/workflows/unit-tests.yml)
+[![Publish Package](https://github.com/chrimaho/py-tictoc-timer/actions/workflows/pypi-publish.yml/badge.svg?branch=main)](https://github.com/chrimaho/py-tictoc-timer/actions/workflows/pypi-publish.yml)
+
 Time the execution of Python code using syntax similar to MATLAB's tic and toc functions.
 
-[![codecov](https://codecov.io/gh/chrimaho/tictoc-timer/branch/main/graph/badge.svg)](https://codecov.io/gh/chrimaho/tictoc-timer)
-[![Unit Testing](https://github.com/chrimaho/tictoc-timer/actions/workflows/unit-tests.yml/badge.svg?branch=main)](https://github.com/chrimaho/tictoc-timer/actions/workflows/unit-tests.yml)
-[![Publish Package](https://github.com/chrimaho/tictoc-timer/actions/workflows/pypi-publish.yml/badge.svg?branch=main)](https://github.com/chrimaho/tictoc-timer/actions/workflows/pypi-publish.yml)
-
-- [tictoc-timer](#tictoc-timer)
+- [py-tictoc-timer](#py-tictoc-timer)
   - [Installation](#installation)
     - [Using `pip`:](#using-pip)
     - [Using `pipenv`:](#using-pipenv)
@@ -22,19 +23,19 @@ Time the execution of Python code using syntax similar to MATLAB's tic and toc f
 
 ### Using [`pip`](https://pypi.org/project/pip):
 ```sh
-pip install tictoc-timer
+pip install py-tictoc-timer
 ```
 
 ### Using [`pipenv`](https://github.com/pypa/pipenv):
 ```sh
-pipenv install tictoc-timer
+pipenv install py-tictoc-timer
 ```
 
 ### Using [`poetry`](https://python-poetry.org):
 1. In your `pyproject.toml` file, add:
     ```toml
     [tool.poetry.dependencies]
-    tictoc-timer
+    py-tictoc-timer = "*"
     ```
 2. Then in the terminal, run:
     ```sh
@@ -43,7 +44,7 @@ pipenv install tictoc-timer
 
 ### Using [`conda`](https://docs.conda.io)
 ```sh
-conda install tictoc-timer
+conda install py-tictoc-timer
 ```
 
 ## Usage
@@ -145,15 +146,15 @@ All contributions are welcome!
 
 ### Run [Black](https://black.readthedocs.io/)
 ```sh
-python -m pipenv run python -m black --safe tictoc_timer tests
+python -m pipenv run python -m black --safe py_tictoc_timer tests
 ```
 
 ### Run [PyTests](https://docs.pytest.org):
 ```sh
-python -m pipenv run python -m pytest --verbose --cov=tictoc_timer --cov-report=term --cov-report=html:cov-report/html --cov-report=xml:cov-report/xml/cov-report.xml
+python -m pipenv run python -m pytest --verbose --cov=py_tictoc_timer --cov-report=term --cov-report=html:cov-report/html --cov-report=xml:cov-report/xml/cov-report.xml
 ```
 
 ### Run [MyPy](http://www.mypy-lang.org) Tests:
 ```sh
-pipenv run mypy tictoc_timer --ignore-missing-imports --pretty --install-types --non-interactive
+pipenv run mypy py_tictoc_timer --ignore-missing-imports --pretty --install-types --non-interactive
 ```
