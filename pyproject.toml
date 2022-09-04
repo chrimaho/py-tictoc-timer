@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "py-tictoc"
+name = "tictoc-timer"
 version = "0.1.11"
 description = "Time the execution of Python code using syntax similar to MATLAB's tic and toc functions."
 readme = "README.md"
