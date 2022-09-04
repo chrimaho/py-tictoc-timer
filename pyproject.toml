@@ -8,7 +8,7 @@ license = "MIT"
 repository = "https://github.com/chrimaho/py-tictoc"
 
 [tool.poetry.dependencies]
-python = ">=3.6,<4"
+python = ">=3.7,<4"
 typeguard = "~2.13"
 
 [tool.poetry.dev-dependencies]
