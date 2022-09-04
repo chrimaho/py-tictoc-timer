@@ -1,15 +1,26 @@
 [tool.poetry]
 name = "py-tictoc"
-version = "0.1.8"
+version = "0.1.9"
 description = "Time the execution of Python code using syntax similar to MATLAB's tic and toc functions."
+readme = "README.md"
 authors = ["Chris Mahoney <https://github.com/chrimaho>"]
+license = "MIT"
+repository = "https://github.com/chrimaho/py-tictoc"
 
 [tool.poetry.dependencies]
-python = ">=3.6,<4"
+python = ">=3.7,<4"
 typeguard = "~2.13"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
 black = "~22.8"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
 mypy = "~0.971"
 pytest = "~7.1"
 pytest-clarity = "~1.0"

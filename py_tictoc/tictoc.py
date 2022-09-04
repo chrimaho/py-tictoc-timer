@@ -8,7 +8,7 @@ from typeguard import typechecked
 
 __all__ = ["TicToc"]
 __author__ = "Chris Mahoney"
-__version__ = "0.1.8"
+__version__ = "0.1.9"
 
 
 class TicToc:
@@ -283,9 +283,6 @@ class TicToc:
             duration //= max_amount
             if duration == 0:
                 break
-
-        if duration:
-            result.append(f"{duration}d")
 
         return " ".join(reversed(result))
 
