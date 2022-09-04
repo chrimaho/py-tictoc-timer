@@ -3,7 +3,7 @@ name = "py-tictoc"
 version = "0.1.10"
 description = "Time the execution of Python code using syntax similar to MATLAB's tic and toc functions."
 readme = "README.md"
-authors = ["Chris Mahoney <https://github.com/chrimaho>"]
+authors = ["Chris Mahoney <chrismahoney@hotmail.com>"]
 license = "MIT"
 repository = "https://github.com/chrimaho/py-tictoc"
 
