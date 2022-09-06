@@ -41,9 +41,11 @@ class TestTicToc(TestCase):
 
     def test_tictoc_restart(self):
         tt = TicToc()
-        tt.tic()
+        tt.tick()
         sleep(1.1)
         tt.toc(restart=True)
+        sleep(1.1)
+        tt.tock(restart=True)
         sleep(1.1)
         tt.rtoc()
         sleep(1.1)
