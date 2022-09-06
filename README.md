@@ -10,7 +10,7 @@
 [![codecov](https://codecov.io/gh/chrimaho/py-tictoc-timer/branch/main/graph/badge.svg)](https://codecov.io/gh/chrimaho/py-tictoc-timer)<br>
 [![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/chrimaho/py-tictoc-timer)](https://img.shields.io/snyk/vulnerabilities/github/chrimaho/py-tictoc-timer)
 [![License](https://img.shields.io/pypi/l/py-tictoc-timer)](https://img.shields.io/pypi/l/py-tictoc-timer)
-<!-- [![Downloads](https://img.shields.io/pypi/dm/py-tictoc-timer)](https://github.com/chrimaho/py-tictoc-timer) -->
+[![Downloads](https://img.shields.io/pypi/dw/py-tictoc-timer)](https://github.com/chrimaho/py-tictoc-timer)
 <!-- [![Stability](https://img.shields.io/pypi/status/py-tictoc-timer)](https://img.shields.io/pypi/status/py-tictoc-timer) -->
 
 </div>
