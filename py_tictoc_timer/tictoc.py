@@ -228,6 +228,11 @@ class TicToc:
         """
         self.toc(restart=restart, print_time=False)
         return self.elapsed
+    
+    @typechecked
+    def toc_string(self, restart: bool = False) -> str:
+        self.toc(restart=restart, print_time=False)
+        return self._format_duration(self.elapsed)
 
     def __enter__(self) -> None:
         """

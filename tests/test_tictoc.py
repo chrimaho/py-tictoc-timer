@@ -69,6 +69,13 @@ class TestTicToc(TestCase):
         sys.stdout.write(f"{val}")
         self.assertGreaterEqual(val, 1)
         self.assertLessEqual(val, 1.5)
+        
+    def test_tictoc_string(self):
+        tt = TicToc()
+        tt.tic()
+        sleep(1.1)
+        val = tt.toc_string()
+        self.assertEqual(val, "1secs")
 
     def test_tictoc_extended(self):
         with TicToc():
