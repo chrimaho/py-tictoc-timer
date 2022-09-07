@@ -52,7 +52,7 @@ class TestTicToc(TestCase):
         tt.toc()
         captured = self.capsys.readouterr()
         self.assertEqual(
-            "Elapsed time: 1secs\nElapsed time: 1secs\nElapsed time: 1secs\n",
+            "Elapsed time: 1secs\nElapsed time: 1secs\nElapsed time: 1secs\nElapsed time: 1secs\n",
             captured.out,
         )
         tt.tic(restart=True)
