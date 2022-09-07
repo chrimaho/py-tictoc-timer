@@ -2,8 +2,8 @@
 
 # `py-tictoc-timer`
 
-[![PyPI version](https://img.shields.io/pypi/v/py-tictoc-timer?label=version)](https://pypi.org/project/py-tictoc-timer/)
-[![Python](https://img.shields.io/pypi/pyversions/py-tictoc-timer.svg?style=plastic&logo=python)](https://pypi.org/project/py-tictoc-timer/)<br>
+[![PyPI version](https://img.shields.io/pypi/v/py-tictoc-timer?label=version&logo=git)](https://pypi.org/project/py-tictoc-timer/)
+[![Python](https://img.shields.io/pypi/pyversions/py-tictoc-timer.svg?style=plastic&logo=python&logoColor=FFDE50)](https://pypi.org/project/py-tictoc-timer/)<br>
 [![Released](https://img.shields.io/github/release-date/chrimaho/py-tictoc-timer?label=released&logo=google-calendar&logoColor=FF7143)](https://pypi.org/project/py-tictoc-timer/#history)
 [![Unit Testing](https://img.shields.io/github/workflow/status/chrimaho/py-tictoc-timer/Unit%20Testing/main?label=testing&logo=pytest)](https://github.com/chrimaho/py-tictoc-timer/actions/workflows/unit-tests.yml)
 [![Publish Package](https://img.shields.io/github/workflow/status/chrimaho/py-tictoc-timer/Publish%20Package?label=build&logo=poetry)](https://github.com/chrimaho/py-tictoc-timer/actions/workflows/pypi-publish.yml)
