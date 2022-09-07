@@ -1,6 +1,9 @@
 # Customs
 cov-report/*
 src/*
+Pipfile
+Pipfile.lock
+poetry.lock
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
