@@ -159,12 +159,12 @@ class TicToc:
         if restart:
             self.restart = restart
         self.start = default_timer()
-    
+
     def tick(self, restart: Optional[bool] = None):
         """
         Summary:
             Alias for `self.tic()`.
-        
+
         Params:
             restart (Optional[bool], optional):
                 Whether or not the timer should be restarted when the `.toc()` method is called. Defaults to `None`.
@@ -205,7 +205,7 @@ class TicToc:
         if self.restart:
             self.start = default_timer()
         return None
-    
+
     def tock(
         self,
         msg: Optional[str] = None,
@@ -229,7 +229,7 @@ class TicToc:
                 Nothing is returned.
         """
         self.toc(msg=msg, restart=restart, print_time=print_time)
-    
+
     def rtoc(
         self,
         msg: Optional[str] = None,
@@ -263,7 +263,7 @@ class TicToc:
         """
         self.toc(restart=restart, print_time=False)
         return self.elapsed
-    
+
     @typechecked
     def toc_string(self, restart: bool = False) -> str:
         self.toc(restart=restart, print_time=False)

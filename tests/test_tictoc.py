@@ -71,7 +71,7 @@ class TestTicToc(TestCase):
         sys.stdout.write(f"{val}")
         self.assertGreaterEqual(val, 1)
         self.assertLessEqual(val, 1.5)
-        
+
     def test_tictoc_string(self):
         tt = TicToc()
         tt.tic()
