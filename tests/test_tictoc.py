@@ -41,16 +41,18 @@ class TestTicToc(TestCase):
 
     def test_tictoc_restart(self):
         tt = TicToc()
-        tt.tic()
+        tt.tick()
         sleep(1.1)
         tt.toc(restart=True)
+        sleep(1.1)
+        tt.tock(restart=True)
         sleep(1.1)
         tt.rtoc()
         sleep(1.1)
         tt.toc()
         captured = self.capsys.readouterr()
         self.assertEqual(
-            "Elapsed time: 1secs\nElapsed time: 1secs\nElapsed time: 1secs\n",
+            "Elapsed time: 1secs\nElapsed time: 1secs\nElapsed time: 1secs\nElapsed time: 1secs\n",
             captured.out,
         )
         tt.tic(restart=True)
@@ -69,7 +71,7 @@ class TestTicToc(TestCase):
         sys.stdout.write(f"{val}")
         self.assertGreaterEqual(val, 1)
         self.assertLessEqual(val, 1.5)
-        
+
     def test_tictoc_string(self):
         tt = TicToc()
         tt.tic()

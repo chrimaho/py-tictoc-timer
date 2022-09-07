@@ -8,7 +8,7 @@ from typeguard import typechecked
 
 __all__ = ["TicToc"]
 __author__ = "Chris Mahoney"
-__version__ = "1.1.2"
+__version__ = "1.1.3"
 
 
 class TicToc:
@@ -160,6 +160,17 @@ class TicToc:
             self.restart = restart
         self.start = default_timer()
 
+    def tick(self, restart: Optional[bool] = None):
+        """
+        Summary:
+            Alias for `self.tic()`.
+
+        Params:
+            restart (Optional[bool], optional):
+                Whether or not the timer should be restarted when the `.toc()` method is called. Defaults to `None`.
+        """
+        self.tic(restart=restart)
+
     @typechecked
     def toc(
         self,
@@ -195,6 +206,30 @@ class TicToc:
             self.start = default_timer()
         return None
 
+    def tock(
+        self,
+        msg: Optional[str] = None,
+        restart: Optional[bool] = None,
+        print_time: Optional[bool] = None,
+    ) -> None:
+        """
+        Summary:
+            Alias for `self.toc()`.
+
+        Params:
+            msg (Optional[str], optional):
+                The message to be printed at the end of the timer. Defaults to `None`.
+            restart (Optional[bool], optional):
+                Whether or not the timer should be restarted. Defaults to `None`.
+            print_time (Optional[bool], optional):
+                Whether or not the elapsed time should be printed. Defaults to `None`.
+
+        Returns:
+            type(None):
+                Nothing is returned.
+        """
+        self.toc(msg=msg, restart=restart, print_time=print_time)
+
     def rtoc(
         self,
         msg: Optional[str] = None,
@@ -228,7 +263,7 @@ class TicToc:
         """
         self.toc(restart=restart, print_time=False)
         return self.elapsed
-    
+
     @typechecked
     def toc_string(self, restart: bool = False) -> str:
         self.toc(restart=restart, print_time=False)
