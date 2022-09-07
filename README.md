@@ -51,9 +51,13 @@ Time the execution of Python code using syntax similar to MATLAB's tic and toc f
       [tool.poetry.dependencies]
       py-tictoc-timer = "*"
       ```
-  2. Then in the terminal, run:
+      Then in the terminal, run:
       ```sh
       poetry install
+      ```
+  3. Or run:
+      ```sh
+      poetry add py-tictoc-timer
       ```
 
 - Using [`conda`](https://docs.conda.io):
@@ -154,9 +158,10 @@ Time the execution of Python code using syntax similar to MATLAB's tic and toc f
   ```
 
 ## Contribution
+Contribution is always welcome!
 1. First, either [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) or [branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#creating-a-branch) the [main repo](https://github.com/chrimaho/py-tictoc-timer/tree/main).
 2. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your forked/branched repo.
-3. Build your environment:
+3. Build your environment with any of the below options:
    1. With [`pipenv`](https://github.com/pypa/pipenv):
         ```sh
         if (-not (Test-Path .venv)) {mkdir .venv}
@@ -175,7 +180,7 @@ Time the execution of Python code using syntax similar to MATLAB's tic and toc f
         python -m poetry run pre-commit install
         ```
 4. Start contributing.
-5. Ensure you add additional [Unit Test](https://docs.python.org/3/library/unittest.html)s to the [test library](https://github.com/chrimaho/py-tictoc-timer/blob/main/tests/test_tictoc.py) for each new feature/functionality.
+5. Ensure you add additional [Unit Test](https://docs.python.org/3/library/unittest.html)'s to the [test library](https://github.com/chrimaho/py-tictoc-timer/blob/main/tests/test_tictoc.py) for each new feature/functionality.
 6. Ensure that all the [tests](#tests) are passing successfully.
 7. When you're happy with the changes, raise a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) to merge with the [main](https://github.com/chrimaho/py-tictoc-timer/tree/main) branch again.
 
@@ -206,10 +211,10 @@ This package was inspired by a few other packages:
 - [`easy-tic-toc`](https://pypi.org/project/easy-tic-toc/)
 - [`tictoc-borisgorelik`](https://pypi.org/project/tictoc-borisgorelik/)
 
-The differentiator is:
-1. To restart the timer easier
-2. The custom messages
-3. The enhanced usage within a context manager
+Why you should use [`py-tictoc-timer`](https://github.com/chrimaho/py-tictoc-timer) and not any of the others is because this package has:
+1. Better & more flexible restart to the timer
+2. Better custom messages during starting & ending the timer
+3. Enhanced usage within a context manager
 
 ## Maintainers
 <a href="https://github.com/chrimaho/py-tictoc-timer/graphs/contributors">
