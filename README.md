@@ -97,6 +97,21 @@ Time the execution of Python code using syntax similar to MATLAB's tic and toc f
   end: 1secs
   ```
 
+- Particularly helpful when running loops:
+  ```python linenums="1"
+  >>> from py_tictoc_timer.tictoc import TicToc
+  >>> from time import sleep
+  >>> with TicToc(begin_message="Start loop", end_message="Time to run loop")
+  ...     for value in ["first", "second", "Third"]:
+  ...         with TicToc(f"- Time for {value}"):
+  ...             sleep(1.1)
+  Start loop
+  - Time for first: 1secs
+  - Time for second: 1secs
+  - Time for Third: 1secs
+  Time to run loop: 3secs
+  ```
+
 - Custom message:
   ```python linenums="1"
   >>> from py_tictoc_timer.tictoc import TicToc
