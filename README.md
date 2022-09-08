@@ -8,9 +8,10 @@
 [![Unit Testing](https://img.shields.io/github/workflow/status/chrimaho/py-tictoc-timer/Unit%20Testing/main?label=testing&logo=pytest)](https://github.com/chrimaho/py-tictoc-timer/actions/workflows/unit-tests.yml)
 [![Publish Package](https://img.shields.io/github/workflow/status/chrimaho/py-tictoc-timer/Publish%20Package?label=build&logo=poetry)](https://github.com/chrimaho/py-tictoc-timer/actions/workflows/pypi-publish.yml)
 [![codecov](https://codecov.io/gh/chrimaho/py-tictoc-timer/branch/main/graph/badge.svg)](https://codecov.io/gh/chrimaho/py-tictoc-timer)<br>
-[![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/chrimaho/py-tictoc-timer)](https://github.com/chrimaho/py-tictoc-timer)
+[![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/chrimaho/py-tictoc-timer?color=green)](https://github.com/chrimaho/py-tictoc-timer)
 [![License](https://img.shields.io/pypi/l/py-tictoc-timer)](https://github.com/chrimaho/py-tictoc-timer/blob/main/LICENSE)
 [![Downloads](https://img.shields.io/pypi/dw/py-tictoc-timer)](https://github.com/chrimaho/py-tictoc-timer)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 <!-- [![Stability](https://img.shields.io/pypi/status/py-tictoc-timer)](https://img.shields.io/pypi/status/py-tictoc-timer) -->
 
 </div>
