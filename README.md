@@ -11,6 +11,7 @@
 [![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/chrimaho/py-tictoc-timer)](https://github.com/chrimaho/py-tictoc-timer)
 [![License](https://img.shields.io/pypi/l/py-tictoc-timer)](https://github.com/chrimaho/py-tictoc-timer/blob/main/LICENSE)
 [![Downloads](https://img.shields.io/pypi/dw/py-tictoc-timer)](https://github.com/chrimaho/py-tictoc-timer)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 <!-- [![Stability](https://img.shields.io/pypi/status/py-tictoc-timer)](https://img.shields.io/pypi/status/py-tictoc-timer) -->
 
 </div>
