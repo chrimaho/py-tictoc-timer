@@ -7,8 +7,6 @@ from typeguard import typechecked
 
 
 __all__ = ["TicToc"]
-__author__ = "Chris Mahoney"
-__version__ = "1.1.4"
 
 
 class TicToc:
@@ -70,7 +68,7 @@ class TicToc:
         start
         end: 1secs
         ```
-        
+
         Particularly helpful when running loops:
         ```python linenums="1"
         >>> from py_tictoc_timer.tictoc import TicToc
@@ -162,7 +160,7 @@ class TicToc:
         self.begin_message = begin_message
         self.end_message = self._clean_message(end_message)
 
-    def tic(self, restart: Optional[bool] = None):
+    def tic(self, restart: Optional[bool] = None) -> None:
         """
         Summary:
             Start the timer.
@@ -175,7 +173,7 @@ class TicToc:
             self.restart = restart
         self.start = default_timer()
 
-    def tick(self, restart: Optional[bool] = None):
+    def tick(self, restart: Optional[bool] = None) -> None:
         """
         Summary:
             Alias for `self.tic()`.
@@ -185,6 +183,13 @@ class TicToc:
                 Whether or not the timer should be restarted when the `.toc()` method is called. Defaults to `None`.
         """
         self.tic(restart=restart)
+
+    def _has_ticked(self) -> bool:
+        return True if self.start > 0 else False
+
+    def _check_has_ticked(self) -> None:
+        if not self._has_ticked():
+            raise AttributeError(f"Please run `.tic()` before running `.toc()`.")
 
     @typechecked
     def toc(
@@ -209,6 +214,7 @@ class TicToc:
             type(None):
                 Nothing is returned.
         """
+        self._check_has_ticked()
         self.end = default_timer()
         self.elapsed = self.end - self.start
         if print_time is None:
@@ -274,7 +280,7 @@ class TicToc:
 
         Returns:
             float:
-                The elapsed time.
+                The elapsed time, in seconds.
         """
         self.toc(restart=restart, print_time=False)
         return self.elapsed
