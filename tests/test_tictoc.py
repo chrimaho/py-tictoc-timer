@@ -67,10 +67,11 @@ class TestTicToc(TestCase):
         tt = TicToc()
         tt.tic()
         sleep(1.1)
+        val = tt.toc_value(restart=True)
+        self.assertBetween(val, 1, 1.5)
+        sleep(75.1)
         val = tt.toc_value()
-        sys.stdout.write(f"{val}")
-        self.assertGreaterEqual(val, 1)
-        self.assertLessEqual(val, 1.5)
+        self.assertBetween(val, 75, 75.5)
 
     def test_tictoc_string(self):
         tt = TicToc()
@@ -84,3 +85,17 @@ class TestTicToc(TestCase):
             sleep(75.1)
         captured = self.capsys.readouterr()
         self.assertEqual("Elapsed time: 1mins 15secs\n", captured.out)
+
+    def test_tictoc_raises(self):
+        tt = TicToc()
+        print(tt.start)
+        with self.assertRaises(AttributeError):
+            tt.toc()
+
+    def assertBetween(
+        self, value: float, lower_limit: float, upper_limit: float
+    ) -> bool:
+        self.assertTrue(
+            lower_limit <= value <= upper_limit,
+            msg=f"{value} is not between {lower_limit} and {upper_limit}.",
+        )
