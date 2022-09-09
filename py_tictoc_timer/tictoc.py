@@ -7,8 +7,6 @@ from typeguard import typechecked
 
 
 __all__ = ["TicToc"]
-__author__ = "Chris Mahoney"
-__version__ = "1.1.4"
 
 
 class TicToc:
