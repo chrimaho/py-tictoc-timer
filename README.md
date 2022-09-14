@@ -161,7 +161,7 @@ Time the execution of Python code using syntax similar to MATLAB's tic and toc f
   Elapsed time: 1secs
   ```
 
-- With time returned:
+- With time returned as value:
   ```python linenums="1"
   >>> from py_tictoc_timer.tictoc import TicToc
   >>> from time import sleep
@@ -171,6 +171,18 @@ Time the execution of Python code using syntax similar to MATLAB's tic and toc f
   >>> value = tt.toc_value()
   >>> print(round(value, 1))
   1.1
+  ```
+
+- With time returned as string:
+  ```python linenums="1"
+  >>> from py_tictoc_timer.tictoc import TicToc
+  >>> from time import sleep
+  >>> tt = TicToc()
+  >>> tt.tic()
+  >>> sleep(1.1)
+  >>> value = tt.toc_string()
+  >>> print(value)
+  1secs
   ```
 
 ## Contribution

@@ -132,7 +132,7 @@ class TicToc:
         Elapsed time: 1secs
         ```
 
-        With time returned:
+        With time returned as value:
         ```python linenums="1"
         >>> from tictoc import TicToc
         >>> from time import sleep
@@ -142,6 +142,18 @@ class TicToc:
         >>> value = tt.toc_value()
         >>> print(round(value, 1))
         1.1
+        ```
+
+        With time returned as string:
+        ```python linenums="1"
+        >>> from tictoc import TicToc
+        >>> from time import sleep
+        >>> tt = TicToc()
+        >>> tt.tic()
+        >>> sleep(1.1)
+        >>> value = tt.toc_string()
+        >>> print(value)
+        1secs
         ```
     """
 
