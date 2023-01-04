@@ -9,25 +9,25 @@ repository = "https://github.com/chrimaho/py-tictoc-timer.git"
 
 [tool.poetry.dependencies]
 python = ">=3.7,<4"
-typeguard = "~2.13"
+typeguard = "^2.13"
 
 [tool.poetry.group.dev]
 optional = true
 
 [tool.poetry.group.dev.dependencies]
-black = "~22.8"
+black = "^22.8"
 
 [tool.poetry.group.test]
 optional = true
 
 [tool.poetry.group.test.dependencies]
-mypy = "~0.971"
-pytest = "~7.1"
-pytest-clarity = "~1.0"
-pytest-cov = "~3.0"
-pytest-sugar = "~0.9"
-pytest-icdiff = "~0.6"
-pytest-xdist = "~2.5"
+mypy = "^0.971"
+pytest = "^7.1"
+pytest-clarity = "^1.0"
+pytest-cov = "^3.0"
+pytest-sugar = "^0.9"
+pytest-icdiff = "^0.6"
+pytest-xdist = "^2.5"
 
 [tool.pytest.ini_options]
 # https://docs.pytest.org/en/6.2.x/customize.html#pyproject-toml
