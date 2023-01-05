@@ -11,6 +11,9 @@ on:
   pull_request:
     branches:
       - main
+    paths:
+      - "py_tictoc_timer/**"
+      - "tests/**"
 
 jobs:
   unit_tests:
