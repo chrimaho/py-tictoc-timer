@@ -7,12 +7,14 @@ on:
       - dev
     paths:
       - "py_tictoc_timer/**"
+      - "!py_tictoc_timer/__init__.py"
       - "tests/**"
   pull_request:
     branches:
       - main
     paths:
       - "py_tictoc_timer/**"
+      - "!py_tictoc_timer/__init__.py"
       - "tests/**"
 
 jobs:
