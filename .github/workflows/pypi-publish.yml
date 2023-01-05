@@ -52,7 +52,7 @@ jobs:
       run: |
         git add .
         git commit -m "Bump version to `$(poetry version --short)` [skip ci]"
-        git push
+        git push --force
         git status
     - name: Build Package
       run: |
