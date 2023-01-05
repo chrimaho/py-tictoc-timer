@@ -34,12 +34,26 @@ jobs:
     - name: Install Dependencies
       run: |
         poetry install --no-interaction --only main
+    - name: Configure Git
+      run: |
+        git remote update
+        git fetch
+        git checkout --track origin/main
+        git config --global user.email "chrismahoney@hotmail.com"
+        git config --global user.name "GitHub Actions"
+        git status
     - name: Bump version
       run: |
         poetry self add poetry-bumpversion
         poetry version --short
         poetry version minor
         poetry version --short
+    - name: Update Git
+      run: |
+        git add .
+        git commit -m "Bump version to `$(poetry version --short)` [skip ci]"
+        git push
+        git status
     - name: Build Package
       run: |
         poetry build
