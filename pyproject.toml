@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "py-tictoc-timer"
-version = "1.5.1"
+version = "1.5.2"
 description = "Time the execution of Python code using syntax similar to MATLAB's tic and toc functions."
 readme = "README.md"
 authors = ["Chris Mahoney <chrismahoney@hotmail.com>"]
