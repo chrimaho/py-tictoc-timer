@@ -10,7 +10,7 @@ authors = [
 repository = "https://github.com/chrimaho/py-tictoc-timer.git"
 
 [tool.poetry.dependencies]
-python = ">=3.7,<4"
+python = ">=3.8,<4"
 typeguard = "^4.0"
 
 [tool.poetry.group.dev]
