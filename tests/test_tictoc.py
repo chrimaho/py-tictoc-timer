@@ -1,9 +1,11 @@
-import sys
+# Python StdLib Imports
 from time import sleep
 from unittest import TestCase
 
+# Python Open Source Imports
 import pytest
 
+# Local Module Imports
 from py_tictoc_timer.tictoc import TicToc
 
 
