@@ -1,8 +1,11 @@
+# Future Python Library Imports
 from __future__ import annotations
 
+# Python StdLib Imports
 from timeit import default_timer
 from typing import Optional
 
+# Python Open Source Imports
 from typeguard import typechecked
 
 
