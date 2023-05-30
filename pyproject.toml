@@ -18,6 +18,8 @@ optional = true
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3"
+pre-commit = "^3.3"
+isort = "^5.12"
 
 [tool.poetry.group.test]
 optional = true
