@@ -46,15 +46,12 @@ jobs:
           pip install --requirement requirements.txt
           pip install --requirement requirements-dev.txt
       - name: Run PyTest
-        run: |
-          pytest --verbose --cov=py_tictoc_timer --cov-report=term --cov-report=html:cov-report/html --cov-report=xml:cov-report/xml/cov-report.xml
+        run: pytest -c pyproject.toml
       - name: Upload Coverage
         uses: codecov/codecov-action@v3
         with:
           files: ./cov-report/xml/cov-report.xml
       - name: Run MyPy
-        run: |
-          mypy py_tictoc_timer --ignore-missing-imports --pretty --install-types --non-interactive
+        run: mypy py_tictoc_timer --config pyproject.toml
       - name: Run Black
-        run: |
-          black --safe py_tictoc_timer tests
+        run: black --diff --check --config pyproject.toml py_tictoc_timer ./
